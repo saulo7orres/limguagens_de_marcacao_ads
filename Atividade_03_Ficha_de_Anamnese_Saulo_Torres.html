@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade 03 - Ficha de Anamnese - Saulo Torres</title>
+</head>
+<body>
+
+  <header>
+    <h1>Ficha de Anamnese</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div>
+          <label for="nomeCompleto">Nome completo *</label><br />
+          <input type="text" id="nomeCompleto" name="nome_completo" required />
+        </div>
+        <br />
+        <div>
+          <label for="dataNascimento">Data de nascimento *</label><br />
+          <input type="date" id="dataNascimento" name="data_nascimento" required />
+        </div>
+        <br />
+        <div>
+          <label for="cpf">CPF</label><br />
+          <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" />
+        </div>
+        <br />
+        <div>
+          <label for="telefone">Telefone *</label><br />
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">E-mail</label><br />
+          <input type="email" id="email" name="email" />
+        </div>
+        <br />
+        <div>
+          <label for="endereco">Endereço</label><br />
+          <input type="text" id="endereco" name="endereco" />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Histórico de Saúde</legend>
+        <div>
+          <label for="alergias">Alergias* (Se sim, descreva)</label><br />
+          <textarea id="alergias" name="alergias" rows="3" cols="50" required></textarea>
+        </div>
+        <br />
+        <div>
+          <p>Doenças crônicas:</p>
+          <input type="checkbox" id="hipertensao" name="doencas_cronicas" value="hipertensao" />
+          <label for="hipertensao">Hipertensão</label>
+          <input type="checkbox" id="diabetes" name="doencas_cronicas" value="diabetes" />
+          <label for="diabetes">Diabetes</label>
+          <input type="checkbox" id="asma" name="doencas_cronicas" value="asma" />
+          <label for="asma">Asma</label>
+          <input type="checkbox" id="outras" name="doencas_cronicas" value="outras" />
+          <label for="outras">Outras</label>
+        </div>
+        <br />
+        <fieldset>
+          <legend>Medicamentos em uso</legend>
+          <p>
+            <label for="med1_nome">Nome 1:</label> <input type="text" id="med1_nome" name="med1_nome" />
+            <label for="med1_dosagem">Dosagem:</label> <input type="text" id="med1_dosagem" name="med1_dosagem" />
+            <label for="med1_freq">Frequência:</label> <input type="text" id="med1_freq" name="med1_freq" />
+          </p>
+          <p>
+            <label for="med2_nome">Nome 2:</label> <input type="text" id="med2_nome" name="med2_nome" />
+            <label for="med2_dosagem">Dosagem:</label> <input type="text" id="med2_dosagem" name="med2_dosagem" />
+            <label for="med2_freq">Frequência:</label> <input type="text" id="med2_freq" name="med2_freq" />
+          </p>
+          <p>
+            <label for="med3_nome">Nome 3:</label> <input type="text" id="med3_nome" name="med3_nome" />
+            <label for="med3_dosagem">Dosagem:</label> <input type="text" id="med3_dosagem" name="med3_dosagem" />
+            <label for="med3_freq">Frequência:</label> <input type="text" id="med3_freq" name="med3_freq" />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>Cirurgias/Internações anteriores</legend>
+          <p>
+            <label for="cir1_qual">Qual 1:</label> <input type="text" id="cir1_qual" name="cir1_qual" />
+            <label for="cir1_quando">Quando:</label> <input type="text" id="cir1_quando" name="cir1_quando" />
+          </p>
+          <p>
+            <label for="cir2_qual">Qual 2:</label> <input type="text" id="cir2_qual" name="cir2_qual" />
+            <label for="cir2_quando">Quando:</label> <input type="text" id="cir2_quando" name="cir2_quando" />
+          </p>
+          <p>
+            <label for="cir3_qual">Qual 3:</label> <input type="text" id="cir3_qual" name="cir3_qual" />
+            <label for="cir3_quando">Quando:</label> <input type="text" id="cir3_quando" name="cir3_quando" />
+          </p>
+        </fieldset>
+        <br />
+        <div>
+          <label for="queixa">Queixa principal* (Motivo da consulta)</label><br />
+          <textarea id="queixa" name="queixa" rows="3" cols="50" required></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Hábitos e Estilo de Vida</legend>
+        <div>
+          <label for="atividade_fisica">Atividade física:</label>
+          <select id="atividade_fisica" name="atividade_fisica">
+            <option value="nenhuma">Nenhuma</option>
+            <option value="leve">Leve</option>
+            <option value="moderada">Moderada</option>
+            <option value="intensa">Intensa</option>
+          </select>
+        </div>
+        <br />
+        <div>
+          <p>Tabagismo:</p>
+          <input type="radio" id="fuma_nao" name="tabagismo" value="nao" /> <label for="fuma_nao">Não</label>
+          <input type="radio" id="fuma_sim" name="tabagismo" value="sim" /> <label for="fuma_sim">Sim</label>
+          <input type="radio" id="fuma_ex" name="tabagismo" value="ex" /> <label for="fuma_ex">Ex-fumante</label>
+        </div>
+        <br />
+        <div>
+          <p>Etílico:</p>
+          <input type="radio" id="bebe_nao" name="etilico" value="nao" /> <label for="bebe_nao">Não</label>
+          <input type="radio" id="bebe_social" name="etilico" value="social" /> <label for="bebe_social">Social</label>
+          <input type="radio" id="bebe_freq" name="etilico" value="frequente" /> <label for="bebe_freq">Frequente</label>
+        </div>
+        <br />
+        <div>
+          <label for="sono">Qualidade do sono:</label>
+          <select id="sono" name="sono">
+            <option value="ruim">Ruim</option>
+            <option value="regular">Regular</option>
+            <option value="boa">Boa</option>
+            <option value="muito_boa">Muito boa</option>
+          </select>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Medições</legend>
+        <label for="altura">Altura (cm):</label> <input type="number" id="altura" name="altura" />
+        <label for="peso">Peso (kg):</label> <input type="number" id="peso" name="peso" step="0.1" />
+        <label for="pa">Pressão arterial (mmHg):</label> <input type="text" id="pa" name="pa" />
+        <label for="fc">Frequência cardíaca (bpm):</label> <input type="number" id="fc" name="fc" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Consentimento</legend>
+        <div>
+          <input type="checkbox" id="termos" name="termos" required />
+          <label for="termos">Concordo com o uso dos meus dados *</label>
+        </div>
+        <br />
+        <div>
+          <label for="assinatura">Assinatura (nome completo) *</label><br />
+          <input type="text" id="assinatura" name="assinatura" required />
+        </div>
+        <br />
+        <div>
+          <label for="data_consentimento">Data *</label><br />
+          <input type="date" id="data_consentimento" name="data_consentimento" required />
+        </div>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Enviar Ficha" aria-label="Enviar Ficha de Anamnese preenchida" />
+      <input type="reset" value="Limpar" />
+    </form>
+    
+    <aside>
+      <h3>Aviso de Privacidade</h3>
+      <p>Todas as suas informações são confidenciais e protegidas pela Lei Geral de Proteção de Dados (LGPD). Elas serão utilizadas exclusivamente para fins de atendimento e diagnóstico.</p>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 - Saulo Torres</p>
+  </footer>
+
+</body>
+</html>
