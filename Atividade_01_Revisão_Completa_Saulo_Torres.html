@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atividade 01 - Revisão Completa - Saulo Torres</title>
+</head>
+<body>
+
+  <header>
+    <h1>Atividade 01 - Revisão de Conceitos Fundamentais de HTML</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#listas">Listas</a></li>
+      <li><a href="#imagens">Imagens</a></li>
+      <li><a href="#tabelas_dados">Tabelas de Dados</a></li>
+      <li><a href="#tabela_beatles">Tabela Discografia</a></li>
+      <li><a href="#artigo_beatles">Artigo Temático</a></li>
+      <li><a href="#caminhos_rel_abs">Caminhos Relativos vs. Absolutos</a></li>
+      <li><a href="Sobre_Mim_Saulo_Torres.html">Sobre Mim (Link Relativo)</a></li>
+      <li><a href="https://github.com/saulo7orres/limguagens_de_marcacao_ads/blob/main/Sobre_Mim_Saulo_Torres.html" target="_blank">Sobre Mim (Link Absoluto)</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <div id="listas">
+      <h1>Listas</h1>
+      <h3>Lista Não Ordenada</h3>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+        <li>Item 5</li>
+      </ul>
+      <h3>Lista Ordenada</h3>
+      <ol>
+        <li>Primeiro passo</li>
+        <li>Segundo passo</li>
+        <li>Terceiro passo</li>
+        <li>Quarto passo</li>
+        <li>Quinto passo</li>
+      </ol>
+      <h3>Lista de Definição</h3>
+      <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language.</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets.</dd>
+        <dt>JS</dt>
+        <dd>JavaScript.</dd>
+      </dl>
+    </div>
+
+    <hr />
+
+    <div id="imagens">
+      <h1>Imagens</h1>
+      <figure>
+        <img src="Imagem_Local/Vitamina_de_Abacate.jpg" alt="Vitamina de abacate cremosa servida em um copo." width="500" />
+        <figcaption>Imagem com caminho relativo.</figcaption>
+      </figure>
+      <figure>
+        <img src="https://images.pexels.com/photos/14537765/pexels-photo-14537765.jpeg" alt="Vitamina de abacate cremosa servida em um copo." width="500" />
+        <figcaption>Imagem com caminho absoluto.</figcaption>
+      </figure>
+    </div>
+
+    <hr />
+
+    <div id="tabelas_dados">
+      <h1>Tabelas de Dados</h1>
+      <h3>Tabela Simples - Educação Profissional (Brasil x SC)</h3>
+      <table border="1" cellpadding="5" width="50%">
+        <caption>Educação Profissional em 2014</caption>
+        <thead>
+          <tr>
+            <th scope="col">Descrição</th>
+            <th scope="col">Brasil</th>
+            <th scope="col">SC</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Matrículas</th>
+            <td>1.741.528</td>
+            <td>67.325</td>
+          </tr>
+          <tr>
+            <th scope="row">Novas Matrículas</th>
+            <td>11,7%</td>
+            <td>3,1%</td>
+          </tr>
+        </tbody>
+      </table>
+      <br />
+      <h3>Tabela Avançada - IDEB (2013/2015/2017)</h3>
+      <table border="1" cellpadding="5" width="70%">
+        <caption>IDEB (2013/2015/2017)</caption>
+        <thead>
+          <tr>
+            <th scope="col">Nível de Ensino</th>
+            <th scope="col">Localidade</th>
+            <th scope="col">2013</th>
+            <th scope="col">2015</th>
+            <th scope="col">2017</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Anos Iniciais</th>
+            <th scope="row">Brasil</th>
+            <td>4,7</td>
+            <td>5,2</td>
+            <td>5,5</td>
+          </tr>
+          <tr>
+            <th scope="row">SC</th>
+            <td>5,5</td>
+            <td>5,8</td>
+            <td>6,0</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Anos Finais</th>
+            <th scope="row">Brasil</th>
+            <td>4,4</td>
+            <td>4,7</td>
+            <td>5,0</td>
+          </tr>
+          <tr>
+            <th scope="row">SC</th>
+            <td>5,1</td>
+            <td>5,5</td>
+            <td>5,7</td>
+          </tr>
+          <tr>
+            <th rowspan="2" scope="rowgroup">Ensino Médio</th>
+            <th scope="row">Brasil</th>
+            <td>3,9</td>
+            <td>4,3</td>
+            <td>4,7</td>
+          </tr>
+          <tr>
+            <th scope="row">SC</th>
+            <td>4,4</td>
+            <td>4,7</td>
+            <td>5,2</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr />
+
+    <div id="tabela_beatles">
+      <h1>Tabela com Imagens - Discografia dos Beatles</h1>
+      <table border="1" cellpadding="5" cellspacing="2" width="100%">
+        <caption>Discografia Selecionada dos Beatles</caption>
+        <thead>
+          <tr>
+            <th scope="col">Álbum</th>
+            <th scope="col">Ano</th>
+            <th scope="col">Capa</th>
+            <th scope="col">Observações</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Abbey Road</th>
+            <td>1969</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/3/3d/Abbey_Road.jpg" alt="Capa do álbum Abbey Road dos Beatles." width="100" />
+                <figcaption>Abbey Road</figcaption>
+              </figure>
+            </td>
+            <td>Último álbum gravado pela banda.</td>
+          </tr>
+          <tr>
+            <th scope="row">Let It Be</th>
+            <td>1970</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/3/3f/The_Beatles_-_Let_It_Be.jpg/250px-The_Beatles_-_Let_It_Be.jpg" alt="Capa do álbum Let It Be dos Beatles." width="100" />
+                <figcaption>Let It Be</figcaption>
+              </figure>
+            </td>
+            <td>Lançado após a separação da banda.</td>
+          </tr>
+          <tr>
+            <th scope="row">Revolver</th>
+            <td>1966</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/2/24/Revolver_%C3%A1lbum.jpg/250px-Revolver_%C3%A1lbum.jpg" alt="Capa do álbum Revolver dos Beatles." width="100" />
+                <figcaption>Revolver</figcaption>
+              </figure>
+            </td>
+            <td>Marcou uma fase mais psicodélica.</td>
+          </tr>
+          <tr>
+            <th scope="row">Sgt. Pepper's Lonely Hearts Club Band</th>
+            <td>1967</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/6/68/Sgt_Peppers.jpg/250px-Sgt_Peppers.jpg" alt="Capa do Sgt. Pepper's dos Beatles." width="100" />
+                <figcaption>Sgt. Pepper's</figcaption>
+              </figure>
+            </td>
+            <td>Considerado um álbum conceitual marcante.</td>
+          </tr>
+          <tr>
+            <th scope="row">Help!</th>
+            <td>1965</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/73/The_Beatles_-_Help%21.jpg/250px-The_Beatles_-_Help%21.jpg" alt="Capa do álbum Help! dos Beatles." width="100" />
+                <figcaption>Help!</figcaption>
+              </figure>
+            </td>
+            <td>Trilha sonora do filme de mesmo nome.</td>
+          </tr>
+          <tr>
+            <th scope="row">Rubber Soul</th>
+            <td>1965</td>
+            <td>
+              <figure>
+                <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/7/78/The_Beatles_-_HRubber_Soul.jpg/250px-The_Beatles_-_HRubber_Soul.jpg" alt="Capa do álbum Rubber Soul dos Beatles." width="100" />
+                <figcaption>Rubber Soul</figcaption>
+              </figure>
+            </td>
+            <td>Mostrou grande amadurecimento lírico e musical.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <hr />
+
+    <div id="artigo_beatles">
+      <h1>Página Temática - Beatles</h1>
+      <article>
+        <h3>A grande inovação psicodélica dos Beatles</h3>
+        <p>A banda de rock The Beatles, inegavelmente, é o grupo musical que mais fez sucesso ao longo da história, além de ter influenciado todo o panorama cultural posterior. Desde o lançamento do primeiro compacto, Love Me Do, em 1962, até o último álbum, Let It Be, em 1970, o conjunto formado por Paul McCartney, John Lennon, George Harrison e Ringo Starr atraiu uma legião de fãs, sendo agraciado com um imenso sucesso comercial, ao deter o número recorde de 27 canções em primeiro lugar nos Estados Unidos e o reconhecimento da crítica, por intermédio do recebimento de inúmeros prêmios, incluindo oito Grammy Awards.</p>
+        <p>Há cinquenta anos, no dia 5 de agosto de 1966, foi lançado no mercado britânico o álbum Revolver, sétimo da banda. O disco foi um marco divisor, não apenas na carreira dos Beatles, mas na própria história da música popular do século XX. Em grande parte devido ao profissionalismo e talento do produtor George Martin, é possível constatar nitidamente uma impressionante evolução musical no grupo, desde o primeiro álbum Please Please Me (1963) até Rubber Soul (1965). No entanto, as grandes inovações nas técnicas de gravação e no estilo musical apresentados em Revolver só podem ser comparados, em termos de impacto no mercado fonográfico, aos álbuns Sgt Pepper’s Lonely Hearts Club Band (1967), também dos Beatles, Led Zeppelin IV (1971) do Led Zeppelin, Dark Side of the Moon (1973) do Pink Floyd e de Thriller (1982) de Michael Jackson.</p>
+        <p>O álbum Revolver foi gravado entre 6 de abril e 21 de junho de 1966 no famoso Abbey Road Studios, da gravadora EMI em Londres onde, com exceção do último disco, foram produzidos todos os trabalhos da banda. Foi concebido intencionalmente pelo quarteto britânico como um marco que representaria a entrada da banda em uma fase madura da carreira, superando um pouco da ingenuidade que caracterizou a maioria das primeiras canções da banda. A maturidade almejada se expressa nos temas das letras, nas linhas melódicas, nos arranjos vocais e instrumentais, no maior uso de outros instrumentos musicais como peças de orquestra ou instrumentos indianos, e, também, nas inovadoras técnicas de gravação e de mixagem executadas pelo produtor George Martin e pelo engenheiro de som Geoff Emerick.</p>
+        <p>Revolver assinala o engajamento oficial dos Beatles com o movimento cultural do psicodelismo. A ideia original era denominar o disco como Abracadabra!, Contudo, desistiram deste nome, decidindo-se então pelo título que remanesceu, não por conta da arma de fogo, mas devido à noção de revolver tomada como alusão tanto ao movimento de rotação de um Long-Play em uma vitrola, quanto da renovação nas ideias e na musicalidade apresentada pelo álbum.</p>
+        <p>Este disco transformador influenciou os trabalhos de diversos outros músicos. Nos Estados Unidos e na Inglaterra devemos lembrar de bandas como Grateful Dead, Jefferson Airplane, The Jimi Hendrix Experience, Cream, The Doors e Pink Floyd. No Brasil, foi uma referência para os grupos Os Mutantes, Os Novos Baianos e Secos & Molhados, bem como para algumas composições de Raul Seixas, Caetano Veloso e Gilberto Gil, dentre outros.</p>
+        <p>Constituído por uma seleção de 14 canções bem distintas, o álbum apresenta 3 composições de George Harrison e outras onze assinadas pela dupla John Lennon e Paul McCartney. Em termos proporcionais, este é o álbum com o maior número de músicas escritas por Harrison, que contribuiu com de três faixas, todas vocalizadas nas gravações pelo próprio compositor. A famosa “Yellow Submarine” foi cantada por Ringo Starr. Os vocais principais das outras 10 faixas são divididos, respectivamente, entre Lennon e McCartney, assumindo a quantia de 5 músicas para cada um.</p>
+        <p>As melodias e os arranjos das canções incluídas em Revolver apresentam em um único trabalho uma gama diversificada de estilos musicais, que vão desde o tradicional rock até as influências do rhythm and blues semelhante ao Motown Sound, da música de câmara barroca, e da música oriental indiana. O álbum antecipou, de certo modo, inúmeros estilos musicais que se tornariam famosos na década de 1970, como o hard rock, o rock progressivo, o punk rock e a música eletrônica. Associados às inovações musicais aqui ressaltadas, a riqueza simbólica e as inúmeras referências culturais das letras permitiriam que fosse possível, talvez, escrevermos um artigo sobre cada uma das 14 faixas.</p>
+        <p>Circundado por um clima psicodélico que começa na capa, elaborada pelo baixista e artista plástico alemão Klaus Voormann, amigo da banda desde o período em que os Beatles tocaram em Hamburgo no começo da década de 1960, tem tal atmosfera presente em diversas canções do disco, em especial “I’m Only Sleeping”, “She Said She Said”, “And Your Bird Can Sing”, “Doctor Robert” e “Tomorrow Never Knows”, cantadas por John Lennon e a já citada interpretação de “Yellow Submarine” por Ringo Starr. O trabalho musical de Revolver, entretanto, não deve ser reduzido a esse ambiente lisérgico proporcionado pelas faixas aqui listadas. As peças executadas por Paul McCartney nada têm a ver com o “LSD style”, droga aliás que o músico se recusou a experimentar. As composições de McCartney neste álbum, assim, refletem questionamentos existenciais próprios e os sentimentos mais profundos em relação às dificuldades que enfrentava em relacionamento fadado ao fracasso com a atriz Jane Asher que, com momentos de euforia e de depressão, se estenderia por mais dois longos anos. A dualidade desse amor se expressa, por um lado, tanto na bela e melancólica “For No One” ou na triste “Eleanor Rigby” quanto, por outro lado, nas alegres e esperançosas “Here, There and Everywhere”, “Good Day Sunshine”, “For No One” e “Got to Get You into My Life”.</p>
+        <p>As composições mais originais, contudo, são as três de George Harrison. Sustentada por uma atmosfera musical contagiante, desenvolvida pela forte marcação da bateria de Ringo Starr e pelo impressionante trabalho executado tanto no baixo quanto na guitarra solo por Paul McCartney, a satírica letra de “Taxman” apresenta uma das mais incisivas críticas ao extorsivo sistema tributário britânico. Tais palavras sobre a tributação poderiam, também, ser dirigidas à realidade brasileira. A transitoriedade da vida e a necessidade de desprendimento são retratadas, não sem um toque de misticismo, na letra de “Love You To”. Esta contém ainda certo cinismo e humor sardônico ao explicitar o desejo sexual pela mulher amada, utilizando não apenas instrumentos e músicos indianos, mas toda uma inovadora melodia que se afasta completamente dos padrões ocidentais. Por fim, a balada “I Want To Tell You”, apoiada principalmente na base rítmica criada por Ringo na bateria e por Paul no baixo e no piano, apresenta ao longo de toda a melodia um riff contínuo de guitarra executado por George, que na letra tenta expressar todos os pensamentos que perpassavam a mente daquele que era mais tímido dos Beatles, mas, também, um dos mais ousados na elaboração de novas experiências musicais.</p>
+        <p>Várias outras coisas gostaria de falar sobre o disco Revolver, mas o melhor que podemos fazer no momento é encerrar o presente ensaio sugerindo aos leitores que escutem com atenção o álbum que hoje completa meio século. “Existem pessoas por aí / Que te aparafusarão ao chão / Elas te preencherão com todos os seus pecados”, alertou George Harrison em “Love You To”. Por isso em nossa efêmera existência aqui no plano material devemos buscar a Verdade, o Amor, o Bem e a Beleza, pois, ainda de acordo com esta canção, “A vida é tão curta / Uma nova não pode ser comprada”. Em parte, esta é a grande mensagem apresentada pelos Beatles, por isso o sucesso e a popularidade da banda parece não ter fim.</p>
+        
+        <aside>
+          <h4>Curiosidade: O Estúdio Abbey Road</h4>
+          <p>A famosa foto da capa do álbum Abbey Road foi tirada na faixa de pedestres em frente ao estúdio de mesmo nome. O estúdio é um marco histórico da música e continua em operação até hoje em Londres.</p>
+        </aside>
+
+        <p><a href="https://faustomag.com/a-grande-inovacao-psicodelica-dos-beatles/" target="_blank">Fonte: FAUSTO - Filosofia, Cultura e Literatura Clássica.</a></p>
+        <figure>
+          <img src="https://faustomag.com/wp-content/uploads/2016/08/revolver-beatles_50_anos_fausto_alex_catharino.jpg" alt="Capa do álbum Revolver dos Beatles." width="400" />
+          <figcaption>The Beatles em 1966.</figcaption>
+        </figure>
+      </article>
+    </div>
+
+    <hr />
+
+    <div id="caminhos_rel_abs">
+      <h1>Caminhos Relativos vs. Absolutos</h1>
+      <p>
+        A diferença fundamental entre <b>caminhos absolutos</b> e <i>caminhos relativos</i> reside em seu ponto de referência. Um caminho <b>absoluto</b> é um endereço completo e autônomo, que aponta para um recurso a partir da raiz do sistema de arquivos ou da web. Ele sempre começa com o protocolo (<code>http://</code> ou <code>https://</code>) ou uma barra (<code>/</code>) no caso de sistemas de arquivos. Por outro lado, um caminho <i>relativo</i> é definido a partir da localização do arquivo atual, sendo, portanto, dependente do contexto.
+      </p>
+      <p>
+        <b>Exemplos de caminhos absolutos:</b><br />
+        - Imagem: <code>&lt;img src="https://site.com/imagem.jpg"&gt;</code><br />
+        - Link: <code>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</code><br />
+      </p>
+      <p>
+        <b>Exemplos de caminhos relativos:</b><br />
+        - Imagem: <code>&lt;img src="imagens/foto.png"&gt;</code> (a partir da pasta atual)<br />
+        - Link: <code>&lt;a href="../outra_pagina.html"&gt;Página Anterior&lt;/a&gt;</code> (subindo um nível de diretório)<br />
+      </p>
+    </div>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Saulo Torres</p>
+  </footer>
+
+</body>
+</html>
