@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade 02 - Formulários - Saulo Torres</title>
+</head>
+<body>
+
+  <header>
+    <h1>Formulário de Inscrição</h1>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <fieldset>
+        <legend>1. Informações de Contato</legend>
+        <div>
+          <label for="nome">Nome Completo:</label><br />
+          <input type="text" id="nome" name="nome_usuario" required />
+        </div>
+        <br />
+        <div>
+          <label for="email">E-mail:</label><br />
+          <input type="email" id="email" name="email_usuario" required placeholder="seu@email.com" />
+        </div>
+        <br />
+        <div>
+          <label for="mensagem">Mensagem:</label><br />
+          <textarea id="mensagem" name="mensagem_usuario" rows="4" cols="50"></textarea>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>2. Dados Adicionais</legend>
+        <div>
+          <label for="telefone">Telefone:</label><br />
+          <input type="tel" id="telefone" name="telefone_usuario" required pattern="\(\d{2}\)\s\d{5}-\d{4}" title="Formato: (XX) XXXXX-XXXX" />
+        </div>
+        <br />
+        <div>
+          <label for="idade">Idade:</label><br />
+          <input type="number" id="idade" name="idade_usuario" min="1" required />
+        </div>
+        <br />
+        <div>
+          <label for="site_pessoal">Site Pessoal:</label><br />
+          <input type="url" id="site_pessoal" name="site_pessoal" placeholder="https://..." />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>3. Turno de Estudo</legend>
+        <input type="radio" id="manha" name="turno" value="manha" required />
+        <label for="manha">Manhã</label><br />
+        <input type="radio" id="tarde" name="turno" value="tarde" />
+        <label for="tarde">Tarde</label><br />
+        <input type="radio" id="noite" name="turno" value="noite" />
+        <label for="noite">Noite</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>4. Interesses</legend>
+        <input type="checkbox" id="programacao" name="interesses" value="programacao" />
+        <label for="programacao">Programação</label><br />
+        <input type="checkbox" id="banco_dados" name="interesses" value="banco_dados" />
+        <label for="banco_dados">Banco de Dados</label><br />
+        <input type="checkbox" id="redes" name="interesses" value="redes" />
+        <label for="redes">Redes</label><br />
+        <input type="checkbox" id="design" name="interesses" value="design" />
+        <label for="design">Design</label>
+      </fieldset>
+
+      <fieldset>
+        <legend>5. Seleção de Curso</legend>
+        <label for="curso">Curso Desejado:</label><br />
+        <select id="curso" name="curso" required>
+          <option value="">Selecione uma opção</option>
+          <option value="informatica">Informática</option>
+          <option value="eletrotecnica">Eletrotécnica</option>
+          <option value="mecanica">Mecânica</option>
+          <option value="administracao">Administração</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>6. Upload de Arquivo</legend>
+        <label for="curriculo">Currículo (PDF):</label><br />
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf" />
+      </fieldset>
+
+      <fieldset>
+        <legend>7. Senha</legend>
+        <div>
+          <label for="senha">Senha:</label><br />
+          <input type="password" id="senha" name="senha" minlength="6" maxlength="20" required />
+        </div>
+        <br />
+        <div>
+          <label for="senha_confirmacao">Confirmação de Senha:</label><br />
+          <input type="password" id="senha_confirmacao" name="senha_confirmacao" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>8. Agendamento</legend>
+        <div>
+          <label for="data_nascimento">Data de Nascimento:</label><br />
+          <input type="date" id="data_nascimento" name="data_nascimento" />
+        </div>
+        <br />
+        <div>
+          <label for="horario_atendimento">Horário de Atendimento:</label><br />
+          <input type="time" id="horario_atendimento" name="horario_atendimento" />
+        </div>
+      </fieldset>
+
+      <br />
+      <input type="submit" value="Enviar Formulário" aria-label="Enviar Formulário de Inscrição preenchido" />
+      <input type="reset" value="Limpar" />
+    </form>
+
+    <aside>
+      <h3>Dicas de Preenchimento</h3>
+      <ul>
+        <li>Verifique se o seu e-mail está correto.</li>
+        <li>O telefone deve seguir o formato (XX) XXXXX-XXXX.</li>
+        <li>A senha precisa ter no mínimo 6 caracteres.</li>
+      </ul>
+    </aside>
+  </main>
+  
+  <footer>
+    <p>&copy; 2025 - Saulo Torres</p>
+  </footer>
+
+</body>
+</html>
